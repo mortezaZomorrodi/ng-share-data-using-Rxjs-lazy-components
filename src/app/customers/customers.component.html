@@ -1,0 +1,26 @@
+<p>
+  customers works!
+</p>
+<br>
+<p style="color: #039be5; font-weight:700; ">{{changedVale}}</p>
+
+
+<label> مشتری اطلاعیه کلی</label>
+<input  type="text" [(ngModel)]="changeValueForAllCustomer">
+<br/>
+<p>{{changeValueForAllCustomer}}</p>
+<button (click)="propagateCustomer()">اعلام کردن</button>
+
+<br/>
+<br/>
+<br/>
+<label> تست درونی مشتری ها</label>
+<input  type="text" [(ngModel)]="state2Inside">
+<br/>
+<p>{{state2Inside}}</p>
+<button (click)="propagateState2()">اعلام کردن</button>
+
+
+<router-outlet></router-outlet>
+<p>+++++++++++++++++++++++++++++++</p>
+<app-dashboard></app-dashboard>
